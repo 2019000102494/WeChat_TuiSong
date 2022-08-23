@@ -34,3 +34,29 @@ api尽量在网上找到免费、免验证的。
 
 ### tianqi.py  天气推送
 最近还在忙，等我写好了再发出来
+
+忙好了，大概效果是这样的
+![image](https://user-images.githubusercontent.com/110412182/186146560-1f14c54b-61f3-4937-bc95-0d0e308bb855.png)
+
+别的功能大噶酌情增加吧
+
+模板名称用到的颜文字 ʕ•ᴥ•ʔ
+```
+{{first.DATA}} 
+{{keyword1.DATA}} 
+{{keyword2.DATA}} 
+{{keyword3.DATA}} 
+{{keyword4.DATA}}
+{{remark.DATA}} 
+```
+
+运行
+```
+python3 tianqi.py
+```
+![image](https://user-images.githubusercontent.com/110412182/186146991-9e4453d3-02c6-4825-8ad1-a06cf7353003.png)
+
+然后在linux服务器中或者云函数里写一个定时任务就好了
+
+0 8 * * * 
+
