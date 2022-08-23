@@ -18,7 +18,6 @@ def send(t):   #带着token去发包
     data = {
     "touser":"",  #填收信人的ID 她关注后 后台可以看见
     "template_id":"",  #填模板的ID 后台创建模板后可以看见
-    "url" : "",
     #"url":"http://weixin.qq.com/download",
     "topcolor":"#FF0000",
     "data":{
@@ -48,5 +47,7 @@ def send(t):   #带着token去发包
     print(res.text)
 
 if __name__ == '__main__':
+    Appid = ""
+    AppSecret = ""
     t = token("Appid","AppSecret") #填写开发者的appid和appsecret
     send(t)
